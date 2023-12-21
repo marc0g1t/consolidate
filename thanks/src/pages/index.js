@@ -1,5 +1,6 @@
 import Modify from "@/components/Button";
 import Bloom from "@/components/Input";
+import Link from "next/link";
 export default function Home() {
   return (
     <div class="container">
@@ -13,13 +14,15 @@ export default function Home() {
         Fsize="20px"
       />
       <Modify text={"Forgot password?"} txtcolor="blue" Fsize="20" />
-      <Modify
-        text={"Create new account"}
-        width="190px"
-        bg="green"
-        Fsize="20px"
-        txtcolor="white"
-      />
+      <Link href="/Modul">
+        <Modify
+          text={"Create new account"}
+          width="190px"
+          bg="green"
+          Fsize="20px"
+          txtcolor="white"
+        />
+      </Link>
     </div>
   );
 }

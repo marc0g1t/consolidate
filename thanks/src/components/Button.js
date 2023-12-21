@@ -11,7 +11,7 @@ const Modify = (props) => {
         fontSize: Fsize,
       }}
     >
-      {text}
+      {g}
     </div>
   );
 };
